@@ -9,6 +9,8 @@
       in {
         default = pkgs.runCommand "default" { }
           ''
+            echo building package default...
+            sleep 2
             cat ${./date} > $out
           '';
       };
